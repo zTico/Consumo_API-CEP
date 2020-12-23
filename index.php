@@ -18,7 +18,7 @@
     <form method="POST" >
         <div class="mb-3">
             <label class="form-label">CEP</label>
-            <input type="text" onblur="pesquisacep(this.value);" class="form-control teste" id="cep" aria-describedby="emailHelp" name="cep" <?php if(isset($_POST['cep'])){ $endereco = get_endereco($_POST['cep']); ?> value="<?php echo $endereco->cep; ?>" <?php } ?>>
+            <input type="text" class="form-control teste" id="cep" aria-describedby="emailHelp" name="cep" <?php if(isset($_POST['cep'])){ $endereco = get_endereco($_POST['cep']); ?> value="<?php echo $endereco->cep; ?>" <?php } ?>>
         </div>        
         
         <div class="mb-3">
